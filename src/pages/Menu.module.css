@@ -1,0 +1,150 @@
+:root{
+  --name:#7f2b2b;
+}
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.categoryBar {
+  top: 0;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  overflow: auto;
+  overflow-x: auto;
+  padding: 8px 0;
+  height: 50px;
+  background-color: white;
+}
+
+.categoryBar::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryBtn {
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  color: var(--name);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.active {
+  background: var(--name);
+  color: white;
+}
+
+/* Список страв */
+.dishList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dishCard {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dishName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dishPrice {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.dishDesc, .dishWeight {
+  font-size: 12px;
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.controls button {
+  background: var(--name);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addBtn {
+  background: var(--name);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bottomBtns {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  padding: 5px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+
+.backBtn, .orderBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.backBtn {
+  background: gray;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.orderBtn {
+  background: var(--name);
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.searchBar input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
