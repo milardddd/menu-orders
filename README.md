@@ -60,12 +60,6 @@ npm run build
 
 ## 🤝 Author
 
-Created by [milardddd](https://www.google.com/search?q=https://github.com/milardddd)
-
-```
-
----
-
-**Хочете, щоб я додав до цього README розділ зі скріншотами або "How it works"?**
+Created by [milardddd](https://github.com/milardddd)
 
 ```
